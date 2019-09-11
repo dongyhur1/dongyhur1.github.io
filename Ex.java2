@@ -1,0 +1,8 @@
+Package org.jacaro.mybookstore;
+public class Ex{
+ public static void main(String [] args){
+System.out.print("2학년"+"허동영");
+System.out.print("2학년"+"허동영");
+System.out.print("2학년"+"허동영");
+}
+}
