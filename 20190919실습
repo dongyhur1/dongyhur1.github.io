@@ -1,0 +1,80 @@
+멤버변수 intVar, longVar, booleanVar, doubleVar, charVar -> 자동초기값 확인
+package org.javaro.lecture;
+public class Ex1_2{
+ static int int Var;
+ static long longVar;
+ static boolean booleanVar;
+ static double doubleVar;
+ static char charVar;
+ public static void main(String [] args){
+ System.out.println("홍길동"+"-"+"20XX0901"+-"+"변수");
+ System.out.println("클래스 멤버변수의 자동초기값을 확인하기 위해 변수설정 및 인쇄 -> 초기값인쇄됨");
+ System.out.println("intVar+","+longVar+","+charVar+","+booleanVar+","+doubleVar);
+}
+}
+
+
+메소드내 로컬변수 grade 초기화 x ->에러 
+package org.javaro.lecture;
+public class Ex1_3{
+ public static void maing(String [] args){
+ System.out.println("홍길동"+"-"+"20XX0901"+"-"+"변수");
+ int garde;
+ System.out.println("메소드내 로컬변수는 초기화가 되지 않으면 에러 발생!!");
+}
+}
+
+
+정수형 변수 더하기 곱하기
+package org.javaro.lecture;
+ public class Ex1_4{
+public static void main(String [] args) {
+ System.out.println("홍길동"+"-"+"20XX0901"+-"+"변수");
+ int a = 10; // int 정수형, 이름: a, 10대입
+ int b = 20; // int 정수형, 이름 : b 20대입
+ int c       ; // int 정수형, 이름 : c, 초기화없음
+c= a+b; // c= a+b
+ System.out.println("변수 타입별 테스트");
+ System.out.println("포스트잇a의 값"+a+"과"+"포스트잇b의 값"+"b"+"의 합은 "+c+"입니다");
+}
+}
+
+
+사칙연산 
+package org.javaro.lecture;
+ public class Ex1_5{
+ public static void main ( String [] args){
+ System.out.println("홍길동"+"-"+"20XX0901"+"-"+"변수");
+ int count=0; // int 정수형, 이름: count,0 대입
+ char letter='a'; // 문자형, 이름: letter, 'a'대입
+ double d= 123.45; // double형 실수, 이름: d, 123.45eodlq
+ boolean happy = false; // boolean형. 이름: happy,false 대입
+ float x= 4.1f; // float형 실수 변수, 이름 : x, 4.1f대입
+ float y; //float형 변수, 이름:y
+ y=x + 5.2f; // 이전에 선언된 y에 x+5.2f대입
+ double z = x*y+15.01; // double형 실수 변수, 이름:z, x*y+15.0대입
+ System.out.println("변수 타입별 테스트");
+ System.out.println(count + "" + letter + "" + happy);
+ System.out.println(x+ "" +y+ "" +z+ "");
+}
+}
+
+
+오버플로우 -> (int 정수 최대값 +1)은 오버플로우 발생
+package org.javaro.lecture;
+public class Ex1_6{
+final static int INT_MAX = 214783647; //int 타입 정수 최대값을 INT_MAX final 변수이용 상수화
+public static void main(String [] args){
+ System.out.println("홍길동"+"-"+"20XX0901"+"-"+"변수");
+int a = INT_MAX+1;
+System.out.println("int 정수 최댓값 214783747+1?"+a+오버플로우 발생")'
+float b = 10.6f;
+//int c = b; -->에러발생
+int c=(int)b; //강제적 형변환 추진
+ System.out.println("float원래값="+b+"를 int로 강제적 형변환 하면" + c);
+int d=(int)(b+0.5); // 형변환을 이용한 반올림
+ System.out.println("float원래값="+b+"를 int로 강제적 형변환으로 반올림하면" + d);
+long e=(long)INT_MAX +1; //암묵적 형변환
+ System.out.println("INT_MAX원래값="INT_MAX+"에 1을 더하여 강제적 형변환하면"+e);
+}
+}
