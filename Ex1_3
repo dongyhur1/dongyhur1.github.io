@@ -1,0 +1,8 @@
+package org.javaro.lecture;
+public class Ex1_3{
+ public static void maing(String [] args){
+ System.out.println("허동영"+"-"+"20181424"+-"+"실습");
+ int garde;
+ System.out.println("메소드내 로컬변수는 초기화가 되지 않으면 에러 발생!!");
+}
+}
