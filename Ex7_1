@@ -1,0 +1,14 @@
+class Ex7_1{
+ public static void main(String [] args){
+ NavySoldier kdhong;
+ kdhong = new NavySoldier("홍길동","1등병");
+
+ System.out.println(kdhong.name);
+ System.out.println(kdhong.rank);
+ kdh.setHeight("170");
+ System.out.println(kdhong.getHeight());
+
+ kdhong.swimming();
+ kdhong.firing();
+ }
+}
