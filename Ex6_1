@@ -1,0 +1,13 @@
+Ex6_1.java
+package org.javaro.lecture;
+
+class Ex6_1{
+public static void main(String [] args){
+int d = sum(1,2,3);  // 함수 호출
+System.out.println("d="+d);
+}
+static ont sum(int a, int b, int c) { // 함수생성
+int total = a+b+c;
+return total;
+ }
+}
