@@ -1,0 +1,11 @@
+package org.javaro.lecture;
+public class Ex4_1{
+public static void main(String [] args){
+ int x= 11;  //초기값
+ int End = 15; //종료조건
+ while(x <=End){
+ System.out.println("x="+x+", End="+End+","+(x<=End));
+ x=x+1; //조건식 변화
+  }
+ }
+}
