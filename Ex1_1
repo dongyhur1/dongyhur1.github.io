@@ -1,0 +1,11 @@
+package org.javaro.lecture;
+ public classEx1_1{
+ public static void maing(String [] args){
+ System.out.println("허동영"+"-"+"20181424"+-"+"실습");
+ int grade =3;
+ System.out.println(grade+"학년"+"홍길동");
+ System.out.println(grade+"학년"+"이몽룡");
+ System.out.println(grade+"학년"+"성춘향");
+ System.out.println(grade+"학년"+"변학도");
+}
+}
