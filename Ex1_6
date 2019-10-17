@@ -1,0 +1,17 @@
+package org.javaro.lecture;
+public class Ex1_6{
+final static int INT_MAX = 214783647; //int 타입 정수 최대값을 INT_MAX final 변수이용 상수화
+public static void main(String [] args){
+ System.out.println("허동영"+"-"+"20181424"+-"+"실습");
+int a = INT_MAX+1;
+System.out.println("int 정수 최댓값 214783747+1?"+a+오버플로우 발생")'
+float b = 10.6f;
+//int c = b; -->에러발생
+int c=(int)b; //강제적 형변환 추진
+ System.out.println("float원래값="+b+"를 int로 강제적 형변환 하면" + c);
+int d=(int)(b+0.5); // 형변환을 이용한 반올림
+ System.out.println("float원래값="+b+"를 int로 강제적 형변환으로 반올림하면" + d);
+long e=(long)INT_MAX +1; //암묵적 형변환
+ System.out.println("INT_MAX원래값="INT_MAX+"에 1을 더하여 강제적 형변환하면"+e);
+}
+}
